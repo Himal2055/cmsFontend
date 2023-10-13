@@ -1,20 +1,13 @@
 import React from 'react'
 import './About.css'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/footer'
+import Button from '../../components/Button/Button'
 const About = () => {
   return (
     <div>
-    <header>
-        <nav>
-            <div className="logo">
-                <h1>Your Digital Pathshala</h1>
-            </div>
-            <ul className="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <Navbar />
+        <Button title = "Register" />
 
     <section className="about">
         <h2>About Us</h2>
@@ -23,16 +16,10 @@ const About = () => {
         <p>Join us on this journey of discovery and education. Together, we can unlock your potential and help you achieve your goals.</p>
     </section>
 
-    <footer>
-        <div className="footer-content">
-            <p>&copy; 2023 Your Digital Pathshala</p>
-            <ul className="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </div>
-    </footer>
+    <Footer />
+
+
+
     </div>
   )
 }

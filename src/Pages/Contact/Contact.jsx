@@ -1,21 +1,13 @@
 import React from 'react'
 import './Contact.css'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/footer'
+import Button from '../../components/Button/Button'
 
 const Contact = () => {
   return (
     <div>
-    <header>
-        <nav>
-            <div className="logo">
-                <h1>Your Digital Pathshala</h1>
-            </div>
-            <ul className="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <Navbar /> 
 
 
     <div className="container">
@@ -33,13 +25,14 @@ const Contact = () => {
                 <label for="message">Message</label>
                 <textarea id="message" name="message" required></textarea>
             </div>
-            <button type="submit" className="btn">Submit</button>
-        </form>
+            <Button title = "Submit"/>
+             
+            </form>
     </div>
 
-    <footer>
-        &copy; 2023 Digital Pathsala. All rights reserved.
-    </footer>
+    <Footer />
+
+
   </div>
   )
 }

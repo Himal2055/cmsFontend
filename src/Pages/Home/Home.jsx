@@ -1,20 +1,14 @@
 import React from 'react'
 import './Home.css'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/footer'
+import Button from '../../components/Button/Button'
 const Home = () => {
   return (
     <div>
-          <header>
-        <nav>
-            <div className="logo">
-                <h1>Your Digital Pathshala</h1>
-            </div>
-            <ul className="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+        <Navbar />
+        <Button title  ="Register" color="red" subTitle ="This is subtitle"/>
+        <Button title ="Login" color="green" subTitle ="This is subtitle"/>
 
     <section className="hero">
         <h2>Welcome to Your Digital Pathshala</h2>
@@ -36,16 +30,8 @@ const Home = () => {
         </div>
     </section>
 
-    <footer>
-        <div className="footer-content">
-            <p>&copy; 2023 Your Digital Pathshala</p>
-            <ul className="social-links">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </div>
-    </footer>
+    <Footer />
+
     
     </div>
   )
