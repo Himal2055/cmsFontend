@@ -7,6 +7,7 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Test from './Pages/Test/Test'
+import UseEffect from './Pages/UseEffect/UseEffect'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Route path ="/" element = {<Home />  } />
       <Route path="/about" element ={<About/>} />
       <Route path='/contact' element = {<Contact />} />
-      <Route path='test' element = {<Test />} />
+      <Route path='/test' element = {<Test />} />
+      <Route path='/useEffect' element= {<UseEffect />} />
     </Routes>
 
     </BrowserRouter>
